@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dice</title>
+  </head>
+  <body class="light">
+    <div class="wrap disabled">
+      <div class="card user_card">
+        <div>Name:<span class="name" id="user_name"></span></div>
+        <div>Rating: <span class="rating" id="user_rating">0</span></div>
+        <div class="dice_holder" id="user_dice_holder"></div>
+        <div class="buttons_wrap">
+          <button class="roll_dice_btn" id="user_roll_btn">
+            Roll the dice
+          </button>
+        </div>
+      </div>
+      <div class="card opponent_card disactive_player_card">
+        <div>
+          Name:
+          <span class="name" id="opponent_name"></span>
+        </div>
+        <div>Rating: <span class="rating" id="opponent_rating">0</span></div>
+        <div class="dice_holder" id="opponent_dice_holder"></div>
+        <div class="buttons_wrap">
+          <button class="roll_dice_btn" id="opponent_roll_btn">
+            Roll the dice
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section class="game_result_pop_up disabled" id="game_result_pop_up">
+      <div class="container">
+        <div class="resulted_message">lool</div>
+        <button class="move_on">Move on</button>
+        <button id="back_to_menu">Back to menu</button>
+      </div>
+    </section>
+
+    <section class="game_menu">
+      <h3 class="game_menu_title">Menu</h3>
+      <button class="start_game_btn">Start game</button>
+      <!-- <button class="see_history_btn">See history</button> -->
+      <button class="change_theme">Change theme</button>
+    </section>
+
+    <section class="pop_up_for_user disabled">
+      <div class="page page1">
+        <label for="name">Input your name</label>
+        <input type="text" name="name" id="name" />
+        <!-- <button class="continue">Continue</button> -->
+      </div>
+      <div class="page page2 disabled">
+        <label for="opponent__name">Input opponent's name:</label>
+        <input type="text" name="name" id="opponent__name" />
+        <!-- <button class="continue">Continue</button> -->
+      </div>
+      <button class="continue">Continue</button>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

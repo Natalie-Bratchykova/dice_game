@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+body {
+  position: relative;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: rgba(11, 4, 45, 0.685);
+}
+
+.light {
+  background: linear-gradient(to right, #11bde8, #11e8bd);
+}
+
+.dark {
+  background-color: black;
+}
+
+.disabled {
+  display: none !important;
+}
+
+.disactive_player_card {
+  opacity: 0.5;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 10%;
+  font-size: 2rem;
+  color: #000;
+}
+.wrap .dice_holder {
+  margin-top: 10%;
+}
+.wrap .card {
+  text-align: center;
+  padding: 2% 5%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.682);
+  transition: all 0.75s;
+}
+.wrap .user_card {
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+}
+.wrap .opponent_card {
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+}
+.wrap button {
+  margin-top: 40%;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.1rem;
+  color: black;
+  border-radius: 0.3rem;
+  background-color: white;
+  transition: all 0.1s linear;
+  padding: 2% 3%;
+  border: none;
+}
+.wrap button:hover {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.game_menu {
+  z-index: 200;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.541);
+  border-radius: 0.5rem;
+  transition: all 0.75s;
+  width: 20%;
+  top: 25%;
+  left: 35%;
+  padding: 5%;
+  margin-top: 15%;
+}
+.game_menu .game_menu_title {
+  margin: 0 0 2%;
+  text-align: center;
+}
+.game_menu button {
+  margin: 2% 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.1rem;
+  color: black;
+  border-radius: 0.3rem;
+  background-color: white;
+  transition: all 0.1s linear;
+  padding: 2% 3%;
+  border: none;
+}
+.game_menu button:hover {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.pop_up_for_user {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.541);
+  border-radius: 0.5rem;
+  transition: all 0.75s;
+  width: 20%;
+  top: 35%;
+  left: 37%;
+  padding: 2.5%;
+  margin-top: 15%;
+  font-size: 1.2rem;
+  color: black;
+  text-align: center;
+}
+.pop_up_for_user .page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  transition: all 0.3s linear;
+}
+.pop_up_for_user input {
+  font-size: 1rem;
+  color: black;
+  margin: 2% 0;
+  font-family: "IBM Plex Mono", monospace;
+  padding: 1.3%;
+  border: none;
+  border-radius: 0.3rem;
+}
+.pop_up_for_user button {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.1rem;
+  color: black;
+  border-radius: 0.3rem;
+  background-color: white;
+  transition: all 0.1s linear;
+  padding: 2% 3%;
+  border: none;
+}
+.pop_up_for_user button:hover {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.pop_up_for_user .page2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.game_result_pop_up {
+  display: block;
+}
+.game_result_pop_up .container {
+  z-index: 2;
+  text-align: center;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.541);
+  border-radius: 0.5rem;
+  transition: all 0.75s;
+  width: 20%;
+  top: 30%;
+  left: 38%;
+  padding: 2%;
+  margin-top: 0%;
+  background: white;
+  color: black;
+}
+.game_result_pop_up .container .resulted_message {
+  font-size: 1.2rem;
+}
+.game_result_pop_up .container button {
+  margin: 5% 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.1rem;
+  color: black;
+  border-radius: 0.3rem;
+  background-color: white;
+  transition: all 0.1s linear;
+  padding: 2% 3%;
+  border: none;
+  border: 1px solid black;
+}
+.game_result_pop_up .container button:hover {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
